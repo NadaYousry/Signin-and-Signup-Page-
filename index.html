@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin and Signup</title>
+    <link rel="icon" href="./imgs/icon.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <!--font awesome cdn-->
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--JQuery cdn-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="signUp">
+            <h1>Sign Up</h1>
+            <figure class="signUpUser">
+                <img src="./imgs/userSignUp.png" alt="">
+            </figure>
+            <figure class="stars">
+                <img src="./imgs/stars.png" alt="">
+            </figure>
+            <form action="" id='signUpForm'>
+                <lable>User Name</lable><input type="text" placeholder="User Name">
+                <lable>E-mail</lable><input type="email" placeholder="aname@gmail.com" name="email" id='signUpEmail'>
+                <span class='errEmailSignUp err'>please check email agian</span>
+                <lable>Phone number</lable><input type="number" placeholder="01-111-***-***" name="Phone"
+                    id='signUpPhone'>
+                <span class='errPhoneSignUp err'>this phone number should be 11 number</span>
+                <lable>Password</lable><input class="password" type="password" placeholder="*******" name="password"
+                    id='signUpPassword'><i class="fa fa-eye eye"></i>
+                <span class='errPasswordSignUp err'>password should be between 6-12 charachters and contain capital,small charachters and numbers</span>
+                <input type="submit" value="Sign Up" class="signUpbtn">
+                <div class="theline"></div>
+                <label>or sign up with</label>
+                <div class="buttons">
+                    <button class="btn facebook"><i class="fa fa-facebook-square"></i><span>Facebook</span></button>
+                    <button class="btn google"><i class="fa fa-google"></i><span>Google</span></button>
+                </div>
+            </form>
+        </div>
+        <div class="signIn">
+            <h1>Sign In</h1>
+            <figure class="signInUser">
+                <img src="./imgs/userSignIn.png" alt="">
+            </figure>
+            <figure class="starsLogIn">
+                <img src="./imgs/stars.png" alt="">
+            </figure>
+            <form action="" id='signInForm'>
+                <lable>E-mail</lable><input type="email" placeholder="aname@gmail.com" name='email' id="signInEmail">
+                <span class='errEmailSignIn err'>please check email agian</span>
+                <lable>Password</lable><input class="password" type="password" placeholder="*******" name='password'><i class="fa fa-eye eye"></i>
+                <input type="submit" value="Sign In" class="signInbtn">
+                <div class="theline"></div>
+                <label>or sign in with</label>
+                <div class="buttons">
+                    <button class="btn facebook"><i class="fa fa-facebook-square"></i><span>Facebook</span></button>
+                    <button class="btn google"><i class="fa fa-google"></i><span>Google</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
